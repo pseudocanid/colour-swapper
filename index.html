@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <title>ShrineBeasts Fursona Colour Swapper</title>
   <style>
     * { box-sizing: border-box; }
@@ -16,6 +18,10 @@
       background: #1a1a2e;
       color: #eee;
     }
+
+    a {
+	color: #7bd88f;
+	}
 
     h1 { 
 	color: #2ecc71; 
@@ -215,6 +221,25 @@
       font-size: 12px;
     }
     .preset-btn:hover { background: #4a5568; }
+
+    .support-banner {
+	  position: fixed;
+	  bottom: 0;
+	  left: 0;
+	  width: 100%;
+	  background: #0f0f23;
+	  border-top: 1px solid #4a5568;
+	  color: #eee;
+	  text-align: center;
+	  padding: 12px;
+	  font-size: 14px;
+	  z-index: 9999;
+	}
+
+	body {
+	  padding-bottom: 60px; /* prevents content being hidden behind banner */
+	}
+
   </style>
 </head>
 <body>
@@ -515,5 +540,18 @@
     // Add initial mapping
     addColorMapping();
   </script>
+
+<!-- Support Banner -->
+<div class="support-banner">
+  Like this tool? Support me on
+  <a href="https://instagram.com/pseudocanid" target="_blank" rel="noopener noreferrer">
+    <i class="fa-brands fa-instagram"></i>PseudoCanid
+  </a>
+  or
+  <a href="https://twitter.com/shrinebeasts" target="_blank" rel="noopener noreferrer">
+    <i class="fa-brands fa-x-twitter"></i>Shrinebeasts
+  </a>
+</div>
+
 </body>
 </html>
